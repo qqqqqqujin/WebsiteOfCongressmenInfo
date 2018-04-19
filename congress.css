@@ -1,0 +1,162 @@
+body{
+    font-family: Trebuchet MS;
+    
+}
+#wrapper {
+  padding-left: 150px;
+  transition: all 0.4s ease 0s;
+}
+
+.navbar-header{
+    background: white;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#sidebar-wrapper {
+  margin-left: -250px;
+  top: 51px;
+  left: 250px;
+  width: 150px;
+  background-color: #3c3c3c;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+.tabbable li{
+    color: lightgray;
+}
+
+.tabbable li a{
+    color: inherit;
+}
+
+#content {
+  width: 100%;
+  padding-top: 20px;
+  transition: all 0.4s ease 0s;
+    height: 100%;
+    margin-top: 50px;
+    background-color: rgb(243,243,243);
+}
+#pageH{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom-color: gainsboro;
+}
+
+#pageB{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom-color: gainsboro;
+}
+#pageC{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom-color: gainsboro;
+}
+#tabs{
+    background-color: white;   
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#sidebar {
+  top: 0;
+  width: 150px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+    text-align: left;
+    background: #3c3c3c;
+}
+
+#sidebar li {
+  line-height: 40px;
+  text-indent: 10px;
+    background: #3c3c3c;
+    font-size: 16px;
+}
+
+#sidebar li a {
+    width: 150px;
+  color: #999999;
+  display: block;
+  text-decoration: none;
+  padding-left: 0px;
+    border: none;
+    text-align: left;
+    background-color: #3c3c3c;
+   left: 0px;
+    
+}
+
+
+
+#spy{
+    height: 100%
+        background-color: #3c3c3c;
+}
+
+
+
+#menu-toggle {
+    text-decoration: none;
+    float: left;
+    color: #3c3c3c;
+    padding-right: 15px;
+}
+
+
+@media (max-width:768px) {
+
+#wrapper {
+  padding-left: 50px;
+   
+}
+
+#sidebar-wrapper {
+  left: 250;
+    margin-left: -250px;
+    width: 50px;
+    margin-right: 0;
+    
+}
+
+#wrapper.active {
+  position: relative;
+  left: 0px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0px;
+  width: 50px;
+  transition: all 0.4s ease 0s;
+}
+
+/*
+#menu-toggle {
+  display: inline-block;
+}
+*/
+}
